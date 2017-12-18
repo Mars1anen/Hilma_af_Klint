@@ -40,11 +40,16 @@ font-weight: 500;
 padding: 0px 20px 10px 0px;
 }
 
+.container {
+	margin-top: 30px;
+}
+
 p {
 font-size: 24px;
 text-align: justify;
 letter-spacing: 0.01em;
 line-height: 1.7em;
+padding-bottom: 20px;
 }
 
 li {
@@ -77,11 +82,13 @@ a:hover {
 color: #230103;
 }
 
+a[disabled] {
+	color: inherit;
+}
 .active {
 color: #230103;
 text-decoration: underline;
 }
-
 .listitem, .lastitem {
 font: 400 24px Oswald;
 letter-spacing: 0.025em;
@@ -139,17 +146,16 @@ div#work2, div#work3 {
 margin-top: 0;
 }
 
-
-div.gallery_vertical {
-width: 330px;
-height: 640px;
-top: 340px;
-left: 40px;
-position: absolute;
-z-index: 1;
+.gallery_horizontal {
+    margin-bottom: 25px;
+    margin-top: 20px;
 }
-
-
+.gallery_horizontal .gallery-piece {
+	display: block;
+}
+.gallery_horizontal .gallery-piece span{
+	position: static;
+}
 div.container_vertical {
 top: 340px;
 left: 40px;
@@ -160,15 +166,13 @@ height: auto;
 
 
 div.gallery {
-background-color: rgba(255, 250, 216, 0.3);
+background-color: #fff8f8;
 border-top: 1px solid rgba(204, 158, 118, 0.4);
 border-bottom: 1px solid rgba(204, 158, 118, 0.4);
 clear: both;
 display: inline-block;
-margin: 15px auto;
-padding: 0 10px;
-position: relative;
-bottom: -50px;
+margin: 25px auto;
+padding: 40px 10px;
 text-align: center;
 width: 100%;
 z-index: 4;
@@ -176,11 +180,8 @@ z-index: 4;
 
 
 .v_gallery_item {
-display: block;
-float: right;
-margin-bottom: 20px;
-height: 300px;
-width: 300px;
+height: auto;
+width: 100%;
 }
 
 
@@ -190,14 +191,34 @@ float: right;
 margin-bottom: 95px;    
 }
 
-
+.gallery-piece {
+	margin: 0 auto 10px auto;
+	text-align: center;
+	display: none;
+}
+.gallery-piece.current {
+	display: block;
+}
 .gallery_item {
 display: inline-block;
 margin: 0 20px 0 20px;
 height: 400px;
 padding-top: 5px;
 }
-
+.gallery_controls {
+	text-align: center;
+	cursor: pointer;
+}
+.gallery_controls i {
+    font-size: 82px;
+    position: relative;
+    top: 42%;
+    opacity: 0.8;
+    color: #03A9F4;
+}
+.gallery_controls i:hover {
+	color: #455157;
+}
 div#gallery2{
 width: 100%;
 margin: auto;
@@ -243,16 +264,24 @@ padding-top: 150px;
 }
 
 
-.caption {
+.gallery-piece .caption {
 border-bottom: 1px solid rgba(29, 32, 38, 0.2);
+display: block;
 font-family: 'Bubbler One';
 font-size: 0.9em;
 font-style: italic;
 font-weight: 400;
 letter-spacing: 0.02em;
 flex-wrap: wrap;
+position: relative;
+bottom: -30px;
+max-width: 300px;
+margin: auto;
 }
 
+.gallery_item img {
+	max-width: 300px; 
+}
 #spirit1Img {
 top: 296px;
 left: 134px;    
@@ -260,18 +289,6 @@ left: 134px;
 #spirit2Img {
 top: 615px;
 left: 134px;    
-}
-#spirit3Img {
-top: 407px; 
-left: 185px;
-}
-#spirit4Img {
-top: 407px; 
-left: 598px;
-}
-#spirit5Img {
-top: 407px; 
-left: 903px;
 }
 #work1Img {
 top: 415px; 

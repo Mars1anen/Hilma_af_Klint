@@ -2,72 +2,98 @@
 <html>
     
   <head>
-    <title>Hilma Af Klint</title>
+    <title>Hilma Af Klint | Spiritual and philosophical involvement</title>
     <link rel="shortcut icon" href="hilma/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="css/furtive.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     
    <body>
-      <header>
+      <header class="row">
           
-        <nav>
-          <div class="navigation">
+        <nav class="navigation col-12">
               <ul>
                 <li class="listitem"><a href="index.html">Biography</a></li>
-                <li class="listitem active"><a href="spirit.html">Spiritual and philosophical involvement</a></li>
+                <li class="listitem active"><a disabled>Spiritual and philosophical involvement</a></li>
                 <li class="listitem"><a href="work.html">Work</a></li>
                 <li class="lastitem"><a href="legacy.html">Legacy</a></li>
               </ul>
-          </div>
         </nav>
           
-        <h1>Hilma Af Klint</h1>
+        <h1 class="col-12 flex-first">Hilma Af Klint</h1>         
+         
       </header>
       
       <main>
-         <div id="spirit">
+         <div id="spirit" class="container">
               
-         <h2 class="subheading">Spiritual and philosophical involvement</h2>
+         <h2 class="subheading py-3 text-center">Spiritual and philosophical involvement</h2>
          <br/>
+         </div>
           
-         <section>
-            <p>In 1880 her younger sister Hermina died and it was at this time that the spiritual dimension of her life began to develop.</p>
+          
+         
+        <div class="container">
+            <section class="text-center col-12">
+              <p>In 1880 her younger sister Hermina died and it was at this time that the spiritual dimension of her life began to develop.</p>
+              
+              <p>Despite being fairly well-known in art circles of her surrounding, the limitation of being a woman artist in male-centric world of painting had an effect on her carreer after graduating from Royal Academy. Thus, she found a group of fellow women artist, called 'De Fem' ('Five'). In that circle they practiced <u><i>séances</i></u>, which were rather <i>en vogue</i> at the time, and also the technique of automatic painting.</p>
+              </section>
+
+              <div class="gallery_horizontal row">
+                 <div class="gallery-piece col-sm-6">
+                   <img src="hilma/hak164_1.jpg" alt="" class="v_gallery_item">
+                   <span class="caption" id="spirit1Img">The Swan n.16</span>
+                 </div>
+                   
+                 <div class="gallery-piece col-sm-6">
+                   <img src="hilma/hak165-web.jpg" alt="" class="v_gallery_item">
+                   <span class="caption" id="spirit2Img">The Swan n.17</span>
+                 </div>
+              </div>
+
+              <section class="text-center col-12">
+              <p> In 1908 she met for the first time Rudolf Steiner, the founder of the Anthroposophical Society, who was on a visit in Stockholm. Rudolf Steiner initiated her to his own theories regarding arts, and would have a certain influence on her paintings later in life. Several years later, in 1920, she would meet him again in Goetheanum in Dornach in Switzerland, the headquarters of the Antroposophical Society. Between 1921 and 1930 she would spend long journeys at Goetheanum.</p>
+              </section>
             
-            <p>Despite being fairly well-known in art circles of her surrounding, the limitation of being a woman artist in male-centric world of painting had an effect on her carreer after graduating from Royal Academy. Thus, she found a group of fellow women artist, called 'De Fem' ('Five'). In that circle they practiced <u><i>séances</i></u>, which were rather <i>en vogue</i> at the time, and also the technique of automatic painting.</p>
-            
-            <p> In 1908 she met for the first time Rudolf Steiner, the founder of the Anthroposophical Society, who was on a visit in Stockholm. Rudolf Steiner initiated her to his own theories regarding arts, and would have a certain influence on her paintings later in life. Several years later, in 1920, she would meet him again in Goetheanum in Dornach in Switzerland, the headquarters of the Antroposophical Society. Between 1921 and 1930 she would spend long journeys at Goetheanum.</p>
-          </section>
-          </div>
-          
-           <div class="gallery_vertical">
-             <img src="hilma/hak164_1.jpg" alt="" width="25%" height="25%" class="v_gallery_item">
-             <span class="caption" id="spirit1Img">The Swan n.16</span>
-               
-             <img src="hilma/hak165-web.jpg" alt="" width="25%" height="25%" class="v_gallery_item">
-             <span class="caption" id="spirit2Img">The Swan n.17</span>
-           </div>
-          
+          </div><!-- cont -->
           
            <div class="gallery">
-             <section role="gallery">
-              
-               <img src="hilma/Hak105_1459087435_crop_550x738.jpg" alt="" width="25%" height="25%" class="gallery_item">
-               <span class="caption" id="spirit3Img">"The Ten Largest", No. 3 Youth</span>
-               
-               <img src="hilma/ue3iscirnw2fy8pfdtek.jpg" alt="" width="25.5%" height="25.5%" class="gallery_item">
-               <span class="caption" id="spirit4Img">Altar Painting</span>
-                
-               <img src="hilma/353409.jpg" alt="" width="25%" height="25%" class="gallery_item">
-               <span class="caption" id="spirit5Img">"The Ten Largest", No. 10 Old Age</span>
+
+             <section role="gallery" class="row">
+             <span class="gallery_controls col-sm-2" id="previous_pic"><i class="material-icons">&#xE5CB;</i></span>
+              <div class="gallery-piece current  text-center col-sm-8">
+                <div class="gallery_item">
+                  <img src="hilma/Hak105_1459087435_crop_550x738.jpg" alt="">
+                </div>
+               <span class="caption row text-center offset-2 col-sm-8" id="spirit3Img">"The Ten Largest", No. 3 Youth</span>
+              </div>
+              <div class="gallery-piece text-center col-sm-8">
+                <div class="gallery_item">
+                  <img src="hilma/ue3iscirnw2fy8pfdtek.jpg" alt="">
+                </div>
+                 <span class="caption row text-center offset-2 col-sm-8" id="spirit4Img">Altar Painting</span>
+              </div>
+              <div class="gallery-piece text-center col-sm-8">
+                <div class="gallery_item">
+                  <img src="hilma/353409.jpg" alt="">
+                </div>
+                 <span class="caption row text-center offset-2 col-sm-8" id="spirit5Img">"The Ten Largest", No. 10 Old Age</span>
+              </div>
+              <span class="gallery_controls col-sm-2" id="next_pic"><i class="material-icons">&#xE5CC;</i></span> 
              </section>
           </div>
        </main>
        
        <footer>This is a demo-version of a site&nbsp;|&nbsp;For any inquiries, please <a href="mailto:mars86582lo@gmail.com">contact me</a>.<br/>2017
       </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
     </body>
     
 </html>
