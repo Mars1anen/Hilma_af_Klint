@@ -8,12 +8,10 @@ function previousImage (handler) {
 		pictures[count-1].parentNode.classList.remove('current');
 		pictures[count-2].parentNode.classList.add('current');	
 		count -= 1;
-		console.log(count);
 	} else if (count === 1) {
 		pictures[count-1].parentNode.classList.remove('current');
 		pictures[2].parentNode.classList.add('current');
 		count = 3;
-		console.log(count);	
 	}
 }
 
